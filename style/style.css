@@ -10,6 +10,7 @@
     --whitely: #FBFBFB;
     --pre-black: #222224;
     --dark-grey: #E1E1E1;
+    --purple: rgba(168, 43, 152, 0.86);
 }
 
 .visually-hidden {
@@ -59,6 +60,23 @@
     background-color: transparent;
 }
 
+
+/* .header__button:active .header__nav {
+    display: block;
+} */
+
+.button-img-header {
+    fill: var(--white);
+}
+
+.button-img-header:hover {
+    fill: var(--red-pink);
+}
+
+.button-img-header:active {
+    fill: var(--purple);
+}
+
 .header__profile {
     margin-right: 42px;
 }
@@ -72,6 +90,7 @@
     display: flex;
     height: 764px;
     padding: 0 calc(50% - 570px);
+    justify-content: space-between;
 }
 
 .brand__wrp {
@@ -79,53 +98,67 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 377px;
+    max-width: 393px;
     align-items: flex-start;
-    margin-left: 223px;
+    margin: 0;
+    position: relative;
 }
 
-.brand__title1 {
+.brand__wrp::before {
+    width: 12px;
+    height: 92px;
+    background-color: var(--red-pink);
+    content: '';
+    position: absolute;
+    left: -28px;
+}
+
+.brand__title {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
+    text-transform: uppercase;
 }
 
-.brand__title2 {
+.brand__text {
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
+    text-transform: uppercase;
 }
 
-.brand__title2-fashion {
+.brand__text-fashion {
     color: var(--red-pink);
+    text-transform: uppercase;
 }
 
 .categories {
     margin-top: 65px;
 }
 
-.list-top {
+.categories__list {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .categories__list-item {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .item-block {
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding-left: 103px;
     align-items: center;
 }
 
 .item-block-long {
-    padding-left: 490px;
     margin-top: 30px;
 }
 
@@ -134,6 +167,7 @@
     font-weight: 400;
     line-height: 19px;
     color: var(--white);
+    text-transform: uppercase;
 }
 
 .item-block__title {
@@ -141,10 +175,7 @@
     font-weight: 700;
     line-height: 29px;
     color: var(--red-pink);
-}
-
-.list-bottom {
-    margin-top: 30px;
+    text-transform: uppercase;
 }
 
 .product__header {
@@ -175,6 +206,65 @@
     margin-bottom: 30px;
 }
 
+
+/* .list-img1 {
+    position: relative;
+} */
+
+
+/* .list-img:hover {
+    filter: brightness(0.35);
+}
+
+.card-hover:hover {
+    display: flex;
+}*/
+
+.list-wrapper {
+    position: relative;
+    height: 420px;
+}
+
+.wrapper-img {
+    /* background: rgba(0, 0, 0, 0.2); */
+    background: none;
+}
+
+.wrapper-overlay {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.overlay-button {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: none;
+    width: 139px;
+    color: var(--white);
+    background: none;
+    border-color: var(--white);
+    padding: 10px 16px 8px 13px;
+}
+
+.product__card-list:hover .overlay-button, .product__card-list:hover .wrapper-overlay, .product__card-list:hover .list-wrapper, .product__card-list:hover .wrapper-overlay:before {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product__card-list:hover .wrapper-img {
+    filter: brightness(0.35);
+}
+
+.button-img {
+    width: 26px;
+    height: 24px;
+}
+
 .card-list {
     padding: 0 28px 0 18px;
 }
@@ -184,6 +274,7 @@
     line-height: 16px;
     color: var(--black);
     padding-top: 25px;
+    text-transform: uppercase;
 }
 
 .card-list__text {
@@ -192,6 +283,7 @@
     line-height: 17px;
     color: var(--dark);
     padding-top: 12px;
+    text-transform: uppercase;
 }
 
 .card-list__price {
@@ -216,6 +308,11 @@
     display: block;
 }
 
+.product__button:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
 .advantage {
     background-color: var(--pre-black);
 }
@@ -229,11 +326,17 @@
 
 .advantage__list-item {
     margin-top: 103px;
+    display: flex;
+    flex-direction: column;
 }
 
 .item-img {
     display: block;
     margin: 0 auto;
+}
+
+.item-img-bottom {
+    width: 100%;
 }
 
 .item-bus {
@@ -251,7 +354,7 @@
 }
 
 .item-text {
-    width: 360px;
+    max-width: 360px;
     margin-bottom: 104px;
 }
 
@@ -341,4 +444,14 @@
 
 .footer__rights {
     color: var(--whitely);
+}
+
+.network-link {
+    fill: var(--white);
+    color: var(--black);
+}
+
+.network-link:hover {
+    fill: var(--red);
+    color: var(--white);
 }

@@ -8,6 +8,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <script src="js/menu.js"></script>
 </head>
 
 <body class="page">
@@ -19,10 +20,48 @@
                     <img class="header__loupe" src="img/loupe.svg" alt="loupe">
                 </div>
                 <div class="header__wrp-links">
-                    <button class="header__button" type="button"><svg class="button-img-header" width="32" height="23"
-                            viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
-                        </svg></button>
+                    <div class="links-menu">
+                        <button id="burger" class="header__button" type="button"><svg class="button-img-header"
+                                width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                            </svg>
+                        </button>
+                        <nav class="header__nav" id="menu">
+                            <h2 class="header__nav-title">menu</h2>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item menu-item">
+                                    <h3 class="menu-item__sub-title">man</h3>
+                                    <ul class="menu-item__sub-list">
+                                        <list class="menu-item__sub-item">Accessories</list>
+                                        <list class="menu-item__sub-item">Bags</list>
+                                        <list class="menu-item__sub-item">Denim</list>
+                                        <list class="menu-item__sub-item">T-Shirts</list>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item menu-item">
+                                    <h3 class="menu-item__sub-title">woman</h3>
+                                    <ul class="menu-item__sub-list">
+                                        <list class="menu-item__sub-item">Accessories</list>
+                                        <list class="menu-item__sub-item">Jackets & Coats</list>
+                                        <list class="menu-item__sub-item">Polos</list>
+                                        <list class="menu-item__sub-item">T-Shirts</list>
+                                        <list class="menu-item__sub-item">Shirts</list>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item menu-item">
+                                    <h3 class="menu-item__sub-title">kids</h3>
+                                    <ul class="menu-item__sub-list">
+                                        <list class="menu-item__sub-item">Accessories</list>
+                                        <list class="menu-item__sub-item">Jackets & Coats</list>
+                                        <list class="menu-item__sub-item">Polos</list>
+                                        <list class="menu-item__sub-item">T-Shirts</list>
+                                        <list class="menu-item__sub-item">Shirts</list>
+                                        <list class="menu-item__sub-item">Bags</list>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <a class="header__profile" href="#"><svg class="button-img-header" width="29" height="29"
                             viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -36,41 +75,7 @@
                     </a>
                 </div>
             </div>
-            <nav class="header__nav">
-                <h2 class="header__nav-title">menu</h2>
-                <ul class="header__menu-list">
-                    <li class="header__menu-item menu-item">
-                        <h3 class="menu-item__sub-title">man</h3>
-                        <ul class="menu-item__sub-list">
-                            <list class="menu-item__sub-item">Accessories</list>
-                            <list class="menu-item__sub-item">Bags</list>
-                            <list class="menu-item__sub-item">Denim</list>
-                            <list class="menu-item__sub-item">T-Shirts</list>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item menu-item">
-                        <h3 class="menu-item__sub-title">woman</h3>
-                        <ul class="menu-item__sub-list">
-                            <list class="menu-item__sub-item">Accessories</list>
-                            <list class="menu-item__sub-item">Jackets & Coats</list>
-                            <list class="menu-item__sub-item">Polos</list>
-                            <list class="menu-item__sub-item">T-Shirts</list>
-                            <list class="menu-item__sub-item">Shirts</list>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item menu-item">
-                        <h3 class="menu-item__sub-title">kids</h3>
-                        <ul class="menu-item__sub-list">
-                            <list class="menu-item__sub-item">Accessories</list>
-                            <list class="menu-item__sub-item">Jackets & Coats</list>
-                            <list class="menu-item__sub-item">Polos</list>
-                            <list class="menu-item__sub-item">T-Shirts</list>
-                            <list class="menu-item__sub-item">Shirts</list>
-                            <list class="menu-item__sub-item">Bags</list>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+
         </div>
     </header>
     <main>

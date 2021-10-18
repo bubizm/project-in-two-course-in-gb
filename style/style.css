@@ -3,6 +3,7 @@
     --light-pink: #F1E4E6;
     --red-pink: #F16D7F;
     --white: #FFFFFF;
+    --grey-white: #ffe;
     --grey: #9F9F9F;
     --light-grey: #F8F8F8;
     --dark: #5D5D5D;
@@ -10,6 +11,7 @@
     --whitely: #FBFBFB;
     --pre-black: #222224;
     --dark-grey: #E1E1E1;
+    --blue: #29B0D9;
     --purple: rgba(168, 43, 152, 0.86);
 }
 
@@ -50,8 +52,31 @@
     align-items: center;
 }
 
+.header__wrp-links {
+    display: flex;
+    align-items: center;
+}
+
+.wrp {
+    width: 100%;
+    height: 100px;
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
 .header__logo {
     margin-right: 41px;
+}
+
+.links-menu {
+    /* .header__wrp-links { */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    min-height: 20px;
 }
 
 .header__button {
@@ -82,11 +107,27 @@
 }
 
 .header__nav {
+    position: absolute;
+    width: 80px;
+    top: 100%;
+    right: 0;
+    background: white;
     display: none;
 }
 
+
+/* .header__nav:hover {
+    display: block;
+} */
+
 .header__nav-title {
     text-transform: uppercase;
+}
+
+.header__menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .menu-item__sub-title {
@@ -426,13 +467,25 @@
     background-color: var(--dark-grey);
 }
 
+.send-email:focus {
+    background: var(--grey-white);
+    outline: none;
+}
+
 .send-button {
     padding: 13px 20px 13px 25px;
     margin: -5px;
     border-radius: 0 25px 25px 0;
-    border: none;
+    border: 1px solid var(--red-pink);
     color: var(--white);
     background-color: var(--red-pink);
+}
+
+.send-button:hover {
+    color: var(--red-pink);
+    background-color: var(--white);
+    border: 1px solid var(--red-pink);
+    /* border-color: var(--red-pink); */
 }
 
 .footer__rights-connection {

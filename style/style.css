@@ -85,6 +85,14 @@
     display: none;
 }
 
+.header__nav-title {
+    text-transform: uppercase;
+}
+
+.menu-item__sub-title {
+    text-transform: uppercase;
+}
+
 .brand {
     background-color: var(--light-pink);
     display: flex;

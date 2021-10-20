@@ -1,0 +1,67 @@
+.header {
+    background-color: $black;
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    }
+    
+    &__wrp-links {
+        @include flex-center;
+
+        &-menu {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        min-height: 20px;
+    }
+    }
+    &__logo {
+        margin-right: 41px;
+    } 
+    
+    &__button {
+        margin-right: 25px;
+        border: none;
+        background-color: transparent;
+    }
+    &__button-img {
+        fill: $white;
+
+        &:hover {
+            fill: $red-pink;
+        }
+
+        &:active {
+            fill: $purple;
+        }
+    }
+    
+    &__profile {
+        margin-right: 42px;
+    }
+    
+    &__nav {
+        position: absolute;
+        width: 80px;
+        top: 100%;
+        right: 0;
+        background: $white;
+        display: none;
+
+        &-title {
+            text-transform: uppercase;
+        }
+    }
+    
+    &__menu-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+
+

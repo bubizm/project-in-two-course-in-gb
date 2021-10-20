@@ -1,0 +1,49 @@
+// .registration {
+
+// }
+
+.registration-head {
+    background-color: $light;
+    padding: 60px 0 60px;
+    @include font(24px, 29px);
+    color: $red-pink;
+    text-transform: uppercase;
+}
+
+.registration__block {
+    margin-top: 64px;
+}
+
+.forms-data {
+    display: flex;
+    flex-direction: column
+}
+
+.forms-data__text {
+    @include font(16px, 19px, 300);
+}
+
+.registration__forms-login {
+    margin-top: 35px;
+}
+
+.text-input {
+    margin-top: 20px;
+    width: 365px;
+    height: 45px;
+}
+
+.forms-data__gender {
+    display: flex;
+    margin-top: 31px;
+}
+
+.gender-input {
+    margin-right: 10px;
+}
+
+.gender-label {
+    margin-right: 20px;
+    @include font(11px, 13px, 300);
+    padding-top: 3px;
+}

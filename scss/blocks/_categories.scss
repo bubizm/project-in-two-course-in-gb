@@ -1,0 +1,35 @@
+.categories {
+    margin-top: 65px;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            position: relative;
+            @include flex-center;
+        }
+    }
+    
+    .item-block {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__text {
+            @include font (16px, 19px);
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        &__title {
+            @include font (24px, 29px, 700);
+            color: $red-pink;
+            text-transform: uppercase;
+        }
+    }
+}

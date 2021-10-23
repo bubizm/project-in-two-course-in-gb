@@ -1,11 +1,10 @@
 .footer {
     background-image: url(../img/footer.jpg);
-    max-width: 1600px;
-    max-height: 448px;
+    background-size: cover;
 
     &__info {
         display: flex;
-        max-height: 448px;
+        justify-content: space-between;
 
         &-data {
             width: 360px;
@@ -13,8 +12,10 @@
         }
 
         &-promo {
-            display: block;
-            margin: 150px auto 156px;
+            display: flex;
+            margin: 120px 0;
+            flex-direction: column;
+            justify-content: center;
         }
     }
     
@@ -28,77 +29,49 @@
         text-align: center;
         color: $pre-black;
     }
-
-    .promo {
-        &-title {
-            @include font(24px, 40px, 700);
-            text-align: center;
-        }
-
-        &-text {
-            @include font(18px, 30px);
-            text-align: center;
-        }
-
-        &-send {
-            margin: 0;
-            padding: 32px;
-        }
-
-        &-send .send-email {
-            padding: 13px 70px 13px 22px;
-            border-radius: 25px 0 0 25px;
-            border: none;
-            background-color: $dark-grey;
-
-            &:focus {
-        background: $grey-white;
-        outline: none;
-        }
-        }
-
-        &-send .send-button {
-        padding: 13px 20px 13px 25px;
-        margin: -5px;
-        border-radius: 0 25px 25px 0;
-        border: 1px solid $red-pink;
-        color: $white;
-        background-color: $red-pink;
-
-        &:hover {
-        color: $red-pink;
-        background-color: $white;
-        border: 1px solid $red-pink;
-    }
-    }
-    }
     
-    &__rights-connection {
+    &__bottom {
         background-color: $pre-black;
         padding: 24px 0 23px;
 
-        .rights-connection {
+        &-rights {
         display: flex;
         justify-content: space-between;
     }
+    }
 
-        .rights-connection .rights {
-        @include flex-center;
+    @media (max-width:1199px) {
+        &__bottom-rights {
+            margin: 0 32px;
     }
     }
-    
-    &__rights {
-        color: $whitely;
-    }
-    
-    .network-link {
-        fill: $white;
-        color: $black;
 
-        &:hover {
-        fill: $red;
-        color: $white;
+    @media (max-width: 767px) {
+        &__info {
+            flex-direction: column;
+            align-items: center;
+
+            &-promo {
+                margin: 40px auto 56px;
+                margin-top: 40px;
+            }
+        }
+
+        &__img {
+            margin: 54px auto 30px;
+        }
+
+        &__text {
+            @include font (18px, 22px)
+        }
+
+        &__bottom {
+            &-rights {
+                @include flex-center;
+                flex-direction: column-reverse;
+            }
+        }
     }
-    }
+
 }
 

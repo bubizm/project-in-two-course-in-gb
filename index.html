@@ -75,15 +75,18 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </header>
     <main>
         <section class="brand">
-            <img class="brand__img" src="img/man-in-top.png" alt="man">
-            <div class="brand__wrp container">
-                <h1 class="brand__title">the brand</h1>
-                <p class="brand__text">of luxerious <span class="brand__text-fashion">fashion</span></p>
+            <div class="container">
+                <div class="brand__wrp">
+                    <img class="brand__wrp-img" src="img/man-in-top.png" alt="man">
+                    <div class="brand__wrp-block">
+                        <h1 class="block-title">the brand</h1>
+                        <p class="block-text">of luxerious <span class="block-text__fashion">fashion</span></p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -92,35 +95,37 @@
                 <h2 class="categories__heading visually-hidden">Sales</h2>
 
                 <ul class="categories__list">
+                    <div class="categories__list-content">
+                        <li class="content-item">
+                            <div class="content-item__column">
+                                <p class="column-text">30% off</p>
+                                <h3 class="column-title">for women</h3>
+                            </div>
+                            <img class="content-item__img" src="img/girl-in-third-section.jpg" alt="girl">
+                        </li>
+                        <li class="content-item content-item__first">
+                            <div class="content-item__column">
+                                <p class="column-text">hot deal</p>
+                                <h3 class="column-title">for men</h3>
+                            </div>
+                            <img class="content-item__img" src="img/man-inthird-section.jpg" alt="man">
+                        </li>
+                        <li class="content-item">
+                            <div class="content-item__column">
+                                <p class="column-text">new arrivals</p>
+                                <h3 class="column-title">for kids</h3>
+                            </div>
+                            <img class="content-item__img" src="img/baby-inthird-section.jpg" alt="baby">
+                        </li>
+                    </div>
 
-                    <li class="categories__list-item">
-                        <div class="item-block">
-                            <p class="item-block__text">30% off</p>
-                            <h3 class="item-block__title">for women</h3>
+                    <li class="content-item content-long">
+                        <div class="content-item__column content-long__text">
+                            <p class="column-text">luxurious & trendy </p>
+                            <h3 class="column-title">accessories</h3>
                         </div>
-                        <img class="item-img" src="img/girl-in-third-section.jpg" alt="girl">
-                    </li>
-                    <li class="categories__list-item">
-                        <div class="item-block">
-                            <p class="item-block__text">hot deal</p>
-                            <h3 class="item-block__title">for men</h3>
-                        </div>
-                        <img class="item-img" src="img/man-inthird-section.jpg" alt="man">
-                    </li>
-                    <li class="categories__list-item">
-                        <div class="item-block">
-                            <p class="item-block__text">new arrivals</p>
-                            <h3 class="item-block__title">for kids</h3>
-                        </div>
-                        <img class="item-img" src="img/baby-inthird-section.jpg" alt="baby">
-                    </li>
-
-                    <li class="categories__list-item item-block-long">
-                        <div class="item-block item-block-long">
-                            <p class="item-block__text">luxurious & trendy </p>
-                            <h3 class="item-block__title">accessories</h3>
-                        </div>
-                        <img class="item-img item-img-bottom" src="img/things-inthird-section.jpg" alt="things">
+                        <img class="content-item__img content-long__img" src="img/things-inthird-section.jpg"
+                            alt="things">
                     </li>
                 </ul>
 
@@ -266,7 +271,7 @@
                         innovation with extensive
                         models.</p>
                 </li>
-                <li class="advantage__list-item">
+                <li class="advantage__list-item advantage__list-itemtwo">
                     <img class="item-corona" src="img/corona.svg" alt="corona">
                     <h2 class="item-heading">Quality assurance</h2>
                     <p class="item-text">Worldwide delivery on all. Authorit tively morph next-generation
@@ -287,8 +292,8 @@
                         condimentum"</p>
                 </section>
                 <section class="footer__info-promo">
-                    <h2 class="promo-title">SUBSCRIBE</h2>
-                    <p class="promo-text">FOR OUR NEW LETTER AND PROMOTION</p>
+                    <h2 class="promo-title">subscribe</h2>
+                    <p class="promo-text">for our new letter promotion</p>
                     <div class="promo-send">
                         <input class="send-email" type="mail" placeholder="Enter Your Email">
                         <button class="send-button">Subscribe</button>
@@ -297,19 +302,19 @@
             </div>
         </div>
 
-        <div class="footer__rights-connection">
-            <div class="rights-connection container">
+        <div class="footer__bottom">
+            <div class="footer__bottom-rights container">
                 <div class="rights">
-                    <p class="footer__rights">© 2021 Brand All Rights Reserved.</p>
+                    <p class="rights-text">© 2021 Brand All Rights Reserved.</p>
                 </div>
-                <div class="connection">
-                    <a class="connection__networks" href="#"><svg class="network-link" width="32" height="32"
+                <div class="footer__bottom-connection">
+                    <a class="connection-network" href="#"><svg class="connection-network-link" width="32" height="32"
                             viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <path d="M31.4506 0H0V32H31.4506V0Z" />
                             <path fill="currentColor"
                                 d="M19.0884 16.28L19.5069 13.616H16.8902V11.8873C16.8902 11.1585 17.2557 10.4481 18.4277 10.4481H19.6172V8.17997C19.6172 8.17997 18.5377 8 17.5056 8C15.3507 8 13.9422 9.27593 13.9422 11.5857V13.616H11.5469V16.28H13.9422V22.72H16.8902V16.28H19.0884Z" />
                         </svg></a>
-                    <a class="connection__networks" href="#"><svg class="network-link" width="33" height="32"
+                    <a class="connection-network" href="#"><svg class="connection-network-link" width="33" height="32"
                             viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
                             <path d="M32.1889 0H0.738281V32H32.1889V0Z" />
                             <g clip-path="url(#clip0)">
@@ -323,7 +328,7 @@
                                 </clipPath>
                             </defs>
                         </svg></a>
-                    <a class="connection__networks" href="#"><svg class="network-link" width="32" height="32"
+                    <a class="connection-network" href="#"><svg class="connection-network-link" width="32" height="32"
                             viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <path d="M31.9252 0H0.474609V32H31.9252V0Z" />
                             <g clip-path="url(#clip0)">
@@ -337,7 +342,7 @@
                                 </clipPath>
                             </defs>
                         </svg></a>
-                    <a class="connection__networks" href="#"><svg class="network-link" width="32" height="32"
+                    <a class="connection-network" href="#"><svg class="connection-network-link" width="32" height="32"
                             viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M31.6635 0H0.212891V32H31.6635V0Z" />
                             <g clip-path="url(#clip0)">

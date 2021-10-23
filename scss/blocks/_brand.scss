@@ -1,19 +1,22 @@
 .brand {
     background-color: $light-pink;
-    display: flex;
-    height: 764px;
-    padding: 0 calc(50% - 570px);
-    justify-content: space-between;
+    max-height: 764px;
 
     &__wrp {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 393px;
-        align-items: flex-start;
         margin: 0;
-        position: relative;
+        @include flex-center;
+        justify-content: space-between;
+
+        &-block {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 393px;
+            align-items: flex-start;
+            margin: 0;
+            position: relative;
+            margin-right: 99px;
 
         &::before {
             width: 12px;
@@ -23,25 +26,35 @@
             position: absolute;
             left: -28px;
         }
+        }
     }
-    
-    &__title {
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 58px;
-        text-transform: uppercase;
-    }
-    
-    &__text {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 38px;
-        text-transform: uppercase;
 
-        &-fashion {
-        color: $red-pink;
-        text-transform: uppercase;
+    @media (max-width: 1199px) {
+        &__wrp {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 33px 0 115px;
+
+            &-img {
+                max-width: 200px;
+                max-height: 368px;
+            }
+
+            &-block {
+                max-width: 300px;
+                margin-right: 0px;
+            }
+        }
     }
+
+    @media (max-width: 767px) {
+        height: 363px;
+        @include flex-center;
+        &__wrp {
+            &-img {
+                display: none;
+            }
+        }
     }
 }
-

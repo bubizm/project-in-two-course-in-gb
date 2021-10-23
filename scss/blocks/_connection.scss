@@ -1,0 +1,9 @@
+.connection-network-link {
+    fill: $white;
+    color: $black;
+
+    &:hover {
+    fill: $red;
+    color: $white;
+}
+}

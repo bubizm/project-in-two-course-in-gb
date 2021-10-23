@@ -1,0 +1,38 @@
+.block {
+
+    &-title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+    }
+    
+    &-text {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+
+        &__fashion {
+        color: $red-pink;
+        text-transform: uppercase;
+    }
+    }
+
+    @media (max-width: 1199px) {
+    &-title {
+        @include font (37px, 44px, 700);
+    }
+
+    &-text {
+        @include font (24px, 29px, 700);
+    }
+}
+
+    @media (max-width: 767px) {
+        &-text {
+            @include font (20px, 24px);
+        }
+        
+    }
+}

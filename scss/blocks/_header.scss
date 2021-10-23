@@ -6,6 +6,8 @@
         justify-content: space-between;
         min-height: 75px;
         align-items: center;
+        margin-right: 35px;
+        margin-left: 35px;
     }
     
     &__wrp-links {
@@ -18,6 +20,7 @@
         min-height: 20px;
     }
     }
+
     &__logo {
         margin-right: 41px;
     } 
@@ -60,6 +63,16 @@
         padding: 0;
         margin: 0;
         list-style: none;
+    }
+
+    @media (max-width: 767px) {
+        &__profile {
+            display: none;
+        }
+
+        &__basket {
+            display: none;
+        }
     }
 }
 

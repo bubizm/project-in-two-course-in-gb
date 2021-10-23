@@ -1,3 +1,11 @@
 .product__card-last {
     margin-bottom: 0;
+
+    @media (max-width: 1199px) {
+        margin-bottom: auto;
+}
+
+    @media (max-width: 767px) {
+        margin-bottom: 16px;
+    }
 }

@@ -1,0 +1,15 @@
+.column {
+
+    &-text {
+        @include font (16px, 19px);
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    &-title {
+        @include font (24px, 29px, 700);
+        color: $red-pink;
+        text-transform: uppercase;
+    }
+
+}

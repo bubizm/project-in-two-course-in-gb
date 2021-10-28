@@ -35,4 +35,15 @@
         }
         
     }
+
+    @media (max-width: 360px) {
+        &-title {
+            @include font (28px, 36px, 700);
+        }
+
+        &-text {
+            @include font (14px, 20px);
+        }
+        
+    }
 }

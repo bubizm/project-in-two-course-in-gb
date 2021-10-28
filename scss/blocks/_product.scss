@@ -19,11 +19,11 @@
         margin-top: 48px;
 
         &-list {
-            width: 360px;
+            max-width: 360px;
             background-color: $light-grey;
             margin-bottom: 30px;
 
-            &:hover .wrapper-img {
+            &:hover .list-wrapper__img {
                 filter: brightness(0.35);
             }
         }
@@ -42,34 +42,14 @@
                 color: $white;
             }
         }
-    
-    .list-wrapper {
-        position: relative;
-        max-height: 420px;
-
-        .wrapper-img {
-            background: none;
-        }
-        
-        .wrapper-overlay {
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            display: none;
-
-            .overlay-button {
-                position: absolute;
-                display: none;
-                width: 139px;
-                color: $white;
-                background: none;
-                border-color: $white;
-                padding: 10px 16px 8px 13px;
-            }
-        }
-    }
   
-    .product__card-list:hover .overlay-button, .product__card-list:hover .wrapper-overlay, .product__card-list:hover .list-wrapper, .product__card-list:hover .wrapper-overlay:before {
+    // .product__card-list:hover .overlay-button, .product__card-list:hover .wrapper-overlay, .product__card-list:hover .list-wrapper, .product__card-list:hover .wrapper-overlay:before {
+    //     display: flex;
+    //     justify-content: space-around;
+    //     align-items: center;
+    // }
+
+    .product__card-list:hover .overlay-button, .product__card-list:hover .list-wrapper__overlay, .product__card-list:hover .list-wrapper, .product__card-list:hover .list-wrapper__overlay:before {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -130,6 +110,14 @@
 
             &-list {
                 margin-bottom: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 365px) {
+        &__card {
+            &-list {
+                max-width: 300px;
             }
         }
     }

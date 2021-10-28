@@ -52,6 +52,7 @@
         height: 363px;
         @include flex-center;
         &__wrp {
+            margin: 0 33px 0 65px;
             &-img {
                 display: none;
             }

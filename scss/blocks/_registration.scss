@@ -12,11 +12,14 @@
 
 .registration__block {
     margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .forms-data {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .forms-data__text {
@@ -25,11 +28,13 @@
 
 .registration__forms-login {
     margin-top: 35px;
+    // display: flex;
+    // flex-direction: column;
 }
 
 .text-input {
     margin-top: 20px;
-    width: 365px;
+    max-width: 360px;
     height: 45px;
 }
 
@@ -46,4 +51,88 @@
     margin-right: 20px;
     @include font(11px, 13px, 300);
     padding-top: 3px;
+}
+
+.text-paragraph {
+    @include font (13px, 15px, 300);
+    margin-top: 15px;
+    color: $grey-registration;
+    max-width: 360px;
+}
+
+.registration__forms-button {
+    margin-top: 39px;
+    background-color: $red-pink;
+    @include font (14px, 17px);
+    color: $white;
+    text-transform: uppercase;
+    padding: 16px 36px 17px 29px;
+    border: none;
+
+    &:hover {
+        background-color: white;
+        color: $red-pink;
+        border: 1px solid $red-pink;
+        padding: 15px 36px 16px 29px;
+    }
+}
+
+.fa-arrow-right::before {
+        content: '';
+        padding-left: 20px;
+    }
+
+.text-head {
+    text-transform: uppercase;
+    @include font (24px, 29px, 300);
+
+}
+
+.text-content {
+    @include font (24px, 29px, 300);
+    max-width: 650px;
+    margin-top: 22px;
+}
+
+.text-list {
+    margin-top: 21px;
+}
+
+.text-list__item {
+    @include font (24px, 29px, 300);
+    margin-top: 16px;
+}
+
+.fa-check::after {
+    content: '';
+    padding-right: 23px;
+}
+
+@media (max-width: 1199px) {
+    .head-text {
+        margin-left: 16px;
+    }
+
+    .text-input {
+        max-width: 360px;
+    }
+
+    .registration__block {
+        max-width: 736px;
+
+        &-text {
+            max-width: 354px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .registration__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration__block-text {
+        margin-top: 40px;
+    }
 }

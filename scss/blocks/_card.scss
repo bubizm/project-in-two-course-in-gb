@@ -1,0 +1,178 @@
+.card {
+    border: 0px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 128px;
+}
+
+.card__content-item {
+    display: flex;
+    background-color: #fff;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    box-sizing: border-box;
+    box-shadow: 17px 19px 24px rgb(0 0 0 / 13%);
+    max-width: 652px;
+}
+
+.card-img-top {
+    max-width: 262px;
+}
+
+.card-body {
+    max-width: 350px;
+}
+
+.item-top {
+    margin-top: 96px;
+}
+
+.item-bottom {
+    margin: 40px 0 72px 0;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: $black;
+    border: 1px solid $grey-registration;
+    padding: 16px 40px;
+    @include font (14px, 17px, 300);
+    border-radius: 0;
+}
+
+.btn-first {
+    margin-right: 183px;
+}
+
+.col-12 {
+    max-width: 652px;
+}
+
+.col {
+    max-width: 360px;
+    
+}
+
+.btn-light {
+    max-width: 100px;
+}
+
+.card-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    max-height: 550px;
+    margin-top: 76px;
+}
+
+.row-head {
+    @include font(16px, 19px, 300);
+}
+
+.form-control {
+    @include font(13px, 16px, 300);
+    color: $grey-registration;
+    padding: 13px 0 16px 17px;
+    border-radius: 0;
+}
+
+.btn-form {
+    background-color: transparent;
+    border: 1px solid $grey-registration;
+    border-radius: 0;
+    padding: 10px 14px 12px 15px;
+    @include font(11px, 13px, 300);
+    max-width: 102px;
+    margin-left: 8px;
+    margin-bottom: 31px;
+}
+
+.card-price {
+    display: flex;
+    flex-direction: column;
+    border: 0px solid $dark-grey;
+    background-color: $dark-grey;
+    max-width: 360px;
+    align-items: flex-end;
+    margin-left: 8px;
+}
+
+.line {
+    background-color:  $grey;
+    width: 275px;
+    height: 1px;
+    margin: 0 32px;
+}
+
+.card-body-button {
+    margin-right: 36px;
+}
+
+.card-button {
+    text-decoration: none;
+    color: $red-pink;
+    margin: 17px 0px 42px 36px;
+    @include font(16px, 19px, 300);
+    background-color: $red-pink;
+    color: $whitely;
+    border: 0;
+
+    &:hover {
+        background-color: $whitely;
+        color: $red-pink;
+    }
+}
+
+.card-title {
+    @include font (24px, 29px);
+    margin-bottom: 42px;
+}
+
+.title-list {
+    @include font($line-height: 22px);
+    margin-bottom: 6px;
+    color: $grey;
+}
+
+.title-list__price {
+    color: $red-pink;
+}
+
+.title-list__border {
+    @include font (18px, 22px);
+    border: 1px solid $grey-registration;
+    padding: 0 16px;
+    margin-left: 16px;
+}
+
+.block-title {
+    display: flex;
+}
+
+.cross {
+    max-width: 10px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+.card-block__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 43px;
+}
+
+.body-text {
+    @include font (11px, 13px);
+    margin-top: 39px;
+}
+
+.body-title {
+    @include font (16px, 19px, 300);
+    margin-top: 12px;
+    margin-bottom: 21px;
+}

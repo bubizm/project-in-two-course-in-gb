@@ -1,0 +1,11 @@
+.rights {
+    @include flex-center;
+
+    &-text {
+    color: $whitely;
+}
+
+    @media (max-width: 768px) {
+        margin: 20px
+    }
+}

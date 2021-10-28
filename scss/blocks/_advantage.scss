@@ -13,33 +13,19 @@
             flex-direction: column;
         }
     }
-    
-    .item {
-        &-img {
-        display: block;
-        margin: 0 auto;
-    }
 
-        &-bus {
-            padding-bottom: 7px;
-            display: block;
-            margin: 0 auto;
-        }
+    @media (max-width: 768px) {
+        &__list {
+            flex-direction: column;
+            align-items: center;
 
-        &-corona {
-            padding-bottom: 5px;
-            display: block;
-            margin: 0 auto;
-        }
+            &-item {
+                margin-top: 48px;
+            }
 
-        &-heading {
-            @include font(20px);
-            padding: 19px 0 16px;
-        }
-
-        &-text {
-            max-width: 360px;
-            margin-bottom: 104px;
+            &-itemtwo {
+                margin-bottom: 64px;
+            }
         }
     }
 }

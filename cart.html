@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <!-- <link rel="stylesheet" href="style/reset.css"> -->
+    <link rel="stylesheet" href="./bootstrap css/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/all.min.css">
     <script src="js/menu.js"></script>
@@ -80,54 +80,84 @@
         </div>
     </header>
     <main>
-        <div class="registration">
-            <div class="registration-head">
-                <h1 class="head-text container">registration</h1>
-            </div>
-            <div class="registration__block container">
-                <form class="registration__block-forms" action="#">
-                    <fieldset class="forms-data">
-                        <legend class="forms-data__text">Your Name</legend>
-                        <label class="visually-hidden" for="name">First Name</label>
-                        <input class="text-input" id="name" placeholder="First Name">
-                        <label class="visually-hidden" for="name">Second Name</label>
-                        <input class="text-input" id="name" placeholder="Last Name">
-                        <div class="forms-data__gender">
-                            <input class="gender-input" type="radio" name="gender" id="male" value="male">
-                            <label for="male" class="gender-label">Male</label>
+        <div class="registration-head">
+            <h1 class="head-text container">shopping cart</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__content-item item-top">
+                        <img src="img/man2-in-fourth-section.jpg" class="card-img-top" alt="man">
+                        <div class="card-body">
+                            <div class="block-title">
+                                <h3 class="card-title">MANGO PEOPLE T-SHIRT</h3>
+                                <a href="#" class="card-title__href"><img src="./img/cross.svg" alt="cross"
+                                        class="cross"></a>
+                            </div>
+                            <ul>
+                                <li class="title-list">Price: <span class="title-list__price">$300</span></li>
+                                <li class="title-list">Color: Red</li>
+                                <li class="title-list">Size: Xl</li>
+                                <li class="title-list">Quantity: <span class="title-list__border">2</span></li>
+                            </ul>
 
-                            <input class="gender-input" type="radio" name="gender" id="female" value="female">
-                            <label for="female" class="gender-label">Female</label>
                         </div>
-                    </fieldset>
-                    <fieldset class="forms-data registration__forms-login">
-                        <legend class="forms-data__text">Login details</legend>
-                        <label class="visually-hidden" for="email">Email</label>
-                        <input class="text-input" id="email" type="email" placeholder="Email">
-                        <label class="visually-hidden" for="password">Password</label>
-                        <input class="text-input" id="password" type="password" placeholder="Password">
-                        <p class="text-paragraph">Please use 8 or more characters, with at least 1 number and a mixture
-                            of uppercase and
-                            lowercase letters</p>
-                    </fieldset>
-                    <button id="" class="registration__forms-button" type="submit">join now<i
-                            class="fas fa-arrow-right"></i></button>
+
+                    </div>
+
+                    <div class="card__content-item item-bottom">
+                        <img src="img/man-in-cart.jpg" class="card-img-top" alt="man">
+                        <div class="card-body">
+                            <div class="block-title">
+                                <h3 class="card-title">MANGO PEOPLE T-SHIRT</h3>
+                                <a href="#" class="card-title__href"><img src="./img/cross.svg" alt="cross"
+                                        class="cross"></a>
+                            </div>
+                            <ul>
+                                <li class="title-list">Price: <span class="title-list__price">$300</span></li>
+                                <li class="title-list">Color: Red</li>
+                                <li class="title-list">Size: Xl</li>
+                                <li class="title-list">Quantity: <span class="title-list__border">1</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-first">CLEAR SHOPPING CART</button>
+                        <button type="submit" class="btn btn-primary">CONTINUE SHOPPING</button>
+                    </div>
+                </div>
+
+
+                <form class="row g-3">
+                    <h2 class="row-head">SHIPPING ADDRESS</h2>
+                    <div class="col">
+                        <label for="inputCity" class="visually-hidden form-label">Город</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Bangladesh">
+                    </div>
+                    <div class="col">
+                        <label for="inputState" class="visually-hidden form-label">Область</label>
+                        <input type="text" class="form-control" id="inputState" placeholder="State">
+                    </div>
+                    <div class="col">
+                        <label for="inputZip" class="visually-hidden form-label">Индекс</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="Postcode / Zip">
+                    </div>
+
+
+                    <button type="button" class="btn btn-light btn-form">GET A QUOTE</button>
+
+                    <div class="card-price">
+                        <div class="card-block__body">
+                            <p class="body-text">SUB TOTAL $900</p>
+                            <h4 class="body-title">GRAND TOTAL <span class="title-list__price">$900</span></h4>
+                        </div>
+                        <div class="line"></div>
+                        <div class="card-body-button">
+                            <a href="#" class="product__button card-button">PROCEED TO CHECKOUT</a>
+                        </div>
+                    </div>
                 </form>
-                <section class="registration__block-text">
-                    <h2 class="text-head">loyalty has its perks</h2>
-                    <p class="text-content">Get in on the loyalty program where you can earn points and unlock serious
-                        perks.
-                        Starting with
-                        these as soon as you join:</p>
-                    <ul class="text-list">
-                        <li class="text-list__item"><i class="fas fa-check"></i>15% off welcome offer</li>
-                        <li class="text-list__item"><i class="fas fa-check"></i>Free shipping, returns and exchanges on
-                            all orders </li>
-                        <li class="text-list__item"><i class="fas fa-check"></i>$10 off a purchase on your birthday</li>
-                        <li class="text-list__item"><i class="fas fa-check"></i>Early access to products</li>
-                        <li class="text-list__item"><i class="fas fa-check"></i>Exclusive offers & rewards</li>
-                    </ul>
-                </section>
             </div>
         </div>
     </main>
@@ -211,6 +241,7 @@
         </div>
 
     </footer>
+    <script src="bootstrap js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

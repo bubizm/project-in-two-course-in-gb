@@ -1,0 +1,11 @@
+.fa {
+    &-arrow-right::before {
+        content: '';
+        padding-left: 20px;
+    }
+
+    &-check::after {
+        content: '';
+        padding-right: 23px;
+    }
+}

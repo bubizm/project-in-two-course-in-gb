@@ -5,13 +5,16 @@
     margin-bottom: 128px;
 }
 
+.card-content {
+    max-width: 734px;
+}
+
 .card__content-item {
     display: flex;
     background-color: #fff;
     border: 0px solid rgba(0, 0, 0, 0.125);
     box-sizing: border-box;
     box-shadow: 17px 19px 24px rgb(0 0 0 / 13%);
-    max-width: 652px;
 }
 
 .card-img-top {
@@ -49,7 +52,7 @@
 
 .col {
     max-width: 360px;
-    
+    margin-top: 20px;
 }
 
 .btn-light {
@@ -72,6 +75,8 @@
     @include font(16px, 19px, 300);
 }
 
+
+
 .form-control {
     @include font(13px, 16px, 300);
     color: $grey-registration;
@@ -86,8 +91,12 @@
     padding: 10px 14px 12px 15px;
     @include font(11px, 13px, 300);
     max-width: 102px;
-    margin-left: 8px;
     margin-bottom: 31px;
+    margin-top: 20px;
+}
+
+.row-place {
+    max-width: 360px;
 }
 
 .card-price {
@@ -101,7 +110,7 @@
 }
 
 .line {
-    background-color:  $grey;
+    background-color: $grey;
     width: 275px;
     height: 1px;
     margin: 0 32px;
@@ -175,4 +184,89 @@
     @include font (16px, 19px, 300);
     margin-top: 12px;
     margin-bottom: 21px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-body {
+            max-width: 472px;
+            width: 472px;
+            flex: none;
+            padding: 0;
+
+        }
+    }
+
+    .btn-first {
+        margin-right: 0;
+    }
+
+    .col-12 {
+        display: flex;
+        justify-content: space-evenly;
+        flex: none;
+        width: auto;
+        max-width: none;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: -204px;
+    }
+
+    .row-place {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-price {
+        max-height: 240px;
+    }
+
+    .card-button {
+        margin: 30px auto 50px;
+    }
+
+    .cross {
+        margin-left: 160px;
+    }
+
+    @media (max-width: 767px) {
+        .card-body {
+            width: 214px;
+        }
+
+        .card-img-top {
+            width: 210px;
+        }
+
+        .card-title {
+            @include font (16px, 19px);
+            margin-top: 16px;
+        }
+
+        .title-list {
+            @include font (14px, 17px);
+        }
+
+        .cross {
+            margin-left: 10px;
+            margin-top: 18px;
+        }
+
+        .btn-primary {
+            @include font (12px, 14px);
+            padding: 9px 30px;
+        }
+
+        .row {
+            margin-left: 0;
+            flex-wrap: wrap;
+        }
+    }
 }

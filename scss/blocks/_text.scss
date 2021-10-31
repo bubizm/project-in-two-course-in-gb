@@ -1,0 +1,45 @@
+.text {
+
+    &-input {
+        margin-top: 20px;
+        max-width: 360px;
+        height: 45px;
+    }
+
+    &-paragraph {
+        @include font (13px, 15px, 300);
+        margin-top: 15px;
+        color: $grey-registration;
+        max-width: 360px;
+    }
+
+    &-head {
+        text-transform: uppercase;
+        @include font (24px, 29px, 300);
+
+    }
+
+    &-content {
+        @include font (24px, 29px, 300);
+        max-width: 650px;
+        margin-top: 22px;
+    }
+
+    &-list {
+        margin-top: 21px;
+
+        &__item {
+            @include font (24px, 29px, 300);
+            margin-top: 16px;
+        }
+    }
+
+
+
+    @media (max-width: 1199px) {
+        &-input {
+            max-width: 360px;
+        }
+
+    }
+}

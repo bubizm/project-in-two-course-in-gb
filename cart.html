@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-    <!-- <link rel="stylesheet" href="style/reset.css"> -->
+    <title>Registration</title>
+    <link rel="stylesheet" href="./bootstrap css/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/all.min.css">
     <script src="js/menu.js"></script>
 </head>
 
@@ -32,31 +33,31 @@
                                 <li class="header__menu-item menu-item">
                                     <h3 class="menu-item__sub-title">man</h3>
                                     <ul class="menu-item__sub-list">
-                                        <li class="menu-item__sub-item">Accessories</li>
-                                        <li class="menu-item__sub-item">Bags</li>
-                                        <li class="menu-item__sub-item">Denim</li>
-                                        <li class="menu-item__sub-item">T-Shirts</li>
+                                        <list class="menu-item__sub-item">Accessories</list>
+                                        <list class="menu-item__sub-item">Bags</list>
+                                        <list class="menu-item__sub-item">Denim</list>
+                                        <list class="menu-item__sub-item">T-Shirts</list>
                                     </ul>
                                 </li>
                                 <li class="header__menu-item menu-item">
                                     <h3 class="menu-item__sub-title">woman</h3>
                                     <ul class="menu-item__sub-list">
-                                        <li class="menu-item__sub-item">Accessories</li>
-                                        <li class="menu-item__sub-item">Jackets & Coats</li>
-                                        <li class="menu-item__sub-item">Polos</li>
-                                        <li class="menu-item__sub-item">T-Shirts</li>
-                                        <li class="menu-item__sub-item">Shirts</li>
+                                        <list class="menu-item__sub-item">Accessories</list>
+                                        <list class="menu-item__sub-item">Jackets & Coats</list>
+                                        <list class="menu-item__sub-item">Polos</list>
+                                        <list class="menu-item__sub-item">T-Shirts</list>
+                                        <list class="menu-item__sub-item">Shirts</list>
                                     </ul>
                                 </li>
                                 <li class="header__menu-item menu-item">
                                     <h3 class="menu-item__sub-title">kids</h3>
                                     <ul class="menu-item__sub-list">
-                                        <li class="menu-item__sub-item">Accessories</li>
-                                        <li class="menu-item__sub-item">Jackets & Coats</li>
-                                        <li class="menu-item__sub-item">Polos</li>
-                                        <li class="menu-item__sub-item">T-Shirts</li>
-                                        <li class="menu-item__sub-item">Shirts</li>
-                                        <li class="menu-item__sub-item">Bags</li>
+                                        <list class="menu-item__sub-item">Accessories</list>
+                                        <list class="menu-item__sub-item">Jackets & Coats</list>
+                                        <list class="menu-item__sub-item">Polos</list>
+                                        <list class="menu-item__sub-item">T-Shirts</list>
+                                        <list class="menu-item__sub-item">Shirts</list>
+                                        <list class="menu-item__sub-item">Bags</list>
                                     </ul>
                                 </li>
                             </ul>
@@ -75,215 +76,92 @@
                     </a>
                 </div>
             </div>
+
         </div>
     </header>
     <main>
-        <section class="brand">
-            <div class="container">
-                <div class="brand__wrp">
-                    <img class="brand__wrp-img" src="img/man-in-top.png" alt="man">
-                    <div class="brand__wrp-block">
-                        <h1 class="block-title">the brand</h1>
-                        <p class="block-text">of luxerious <span class="block-text__fashion">fashion</span></p>
+        <div class="registration-head">
+            <h1 class="head-text container">shopping cart</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card__content">
+                    <div class="card__content-item item-top">
+                        <img src="img/man2-in-fourth-section.jpg" class="card-img-top" alt="man">
+                        <div class="card-body">
+                            <div class="block-title">
+                                <h3 class="card-title">MANGO PEOPLE T-SHIRT</h3>
+                                <a href="#" class="card-title__href"><img src="./img/cross.svg" alt="cross"
+                                        class="cross"></a>
+                            </div>
+                            <ul>
+                                <li class="title-list">Price: <span class="title-list__price">$300</span></li>
+                                <li class="title-list">Color: Red</li>
+                                <li class="title-list">Size: Xl</li>
+                                <li class="title-list">Quantity: <span class="title-list__border">2</span></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__content-item item-bottom">
+                        <img src="img/man-in-cart.jpg" class="card-img-top" alt="man">
+                        <div class="card-body">
+                            <div class="block-title">
+                                <h3 class="card-title">MANGO PEOPLE T-SHIRT</h3>
+                                <a href="#" class="card-title__href"><img src="./img/cross.svg" alt="cross"
+                                        class="cross"></a>
+                            </div>
+                            <ul>
+                                <li class="title-list">Price: <span class="title-list__price">$300</span></li>
+                                <li class="title-list">Color: Red</li>
+                                <li class="title-list">Size: Xl</li>
+                                <li class="title-list">Quantity: <span class="title-list__border">1</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-first">CLEAR SHOPPING CART</button>
+                        <button type="submit" class="btn btn-primary">CONTINUE SHOPPING</button>
                     </div>
                 </div>
+
+
+                <form class="row g-3">
+                    <div class="row-place">
+                    <h2 class="row-head">SHIPPING ADDRESS</h2>
+                    <div class="col">
+                        <label for="inputCity" class="visually-hidden form-label">Город</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Bangladesh">
+                    </div>
+                    <div class="col">
+                        <label for="inputState" class="visually-hidden form-label">Область</label>
+                        <input type="text" class="form-control" id="inputState" placeholder="State">
+                    </div>
+                    <div class="col">
+                        <label for="inputZip" class="visually-hidden form-label">Индекс</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="Postcode / Zip">
+                    </div>
+
+
+                    <button type="button" class="btn btn-light btn-form">GET A QUOTE</button>
+                </div>
+
+                    <div class="card-price">
+                        <div class="card-block__body">
+                            <p class="body-text">SUB TOTAL $900</p>
+                            <h4 class="body-title">GRAND TOTAL <span class="title-list__price">$900</span></h4>
+                        </div>
+                        <div class="line"></div>
+                        <div class="card-body-button">
+                            <a href="#" class="product__button card-button">PROCEED TO CHECKOUT</a>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </section>
-
-        <div class="container">
-            <section class="categories">
-                <h2 class="categories__heading visually-hidden">Sales</h2>
-
-                <div class="categories__list">
-                    <ul class="categories__list-content">
-                    
-                        <li class="content-item">
-                            <div class="content-item__column">
-                                <p class="column-text">30% off</p>
-                                <h3 class="column-title">for women</h3>
-                            </div>
-                            <img class="content-item__img" src="img/girl-in-third-section.jpg" alt="girl">
-                        </li>
-                        <li class="content-item list-first">
-                            <div class="content-item__column">
-                                <p class="column-text">hot deal</p>
-                                <h3 class="column-title">for men</h3>
-                            </div>
-                            <img class="content-item__img" src="img/man-inthird-section.jpg" alt="man">
-                        </li>
-                        <li class="content-item">
-                            <div class="content-item__column">
-                                <p class="column-text">new arrivals</p>
-                                <h3 class="column-title">for kids</h3>
-                            </div>
-                            <img class="content-item__img" src="img/baby-inthird-section.jpg" alt="baby">
-                        </li>
-                    </ul>
-                </div>
-                <div class="categories__list">
-                    <ul class="categories__list-content">
-                    <li class="content-item content-long">
-                        <div class="content-item__column content-long__text">
-                            <p class="column-text">luxurious & trendy </p>
-                            <h3 class="column-title">accessories</h3>
-                        </div>
-                        <img class="content-item__img content-long__img" src="img/things-inthird-section.jpg"
-                            alt="things">
-                    </li>
-                   
-                </ul>
-                </div>
-            </section>
-
-            <section class="product">
-                <h2 class="product__header">Featured Items</h2>
-                <p class="product__text">Shop for items based on what we featured in this week</p>
-
-                <ul class="product__card">
-                    <li class="product__card-list">
-                        <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/man1-in-fourth-section.jpg" alt="man">
-                            <div class="list-wrapper__overlay">
-                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class="card-list">
-                            <h3 class="card-list__title">ellery x m'o capsule </h3>
-                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym
-                                Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="card-list__price">$52.00</p>
-                        </div>
-                    </li>
-
-                    <li class="product__card-list">
-                        <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/girl1-in-fourth-section.jpg" alt="man">
-                            <div class="list-wrapper__overlay">
-                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class="card-list">
-                            <h3 class="card-list__title">ellery x m'o capsule </h3>
-                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym
-                                Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="card-list__price">$52.00</p>
-                        </div>
-                    </li>
-
-                    <li class="product__card-list">
-                        <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/man2-in-fourth-section.jpg" alt="man">
-                            <div class="list-wrapper__overlay">
-                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class="card-list">
-                            <h3 class="card-list__title">ellery x m'o capsule </h3>
-                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym
-                                Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="card-list__price">$52.00</p>
-                        </div>
-                    </li>
-
-                    <li class="product__card-list product__card-last">
-                        <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/man3-in-fourth-section.jpg" alt="man">
-                            <div class="list-wrapper__overlay">
-                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class="card-list">
-                            <h3 class="card-list__title">ellery x m'o capsule </h3>
-                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym
-                                Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="card-list__price">$52.00</p>
-                        </div>
-                    </li>
-
-                    <li class="product__card-list product__card-last">
-                        <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/girl2-in-fourth-section.jpg" alt="man">
-                            <div class="list-wrapper__overlay">
-                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class="card-list">
-                            <h3 class="card-list__title">ellery x m'o capsule </h3>
-                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym
-                                Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="card-list__price">$52.00</p>
-                        </div>
-                    </li>
-
-                    <li class="product__card-list product__card-last">
-                        <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/girl3-in-fourth-section.jpg" alt="man">
-                            <div class="list-wrapper__overlay">
-                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
-                                    Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class="card-list">
-                            <h3 class="card-list__title">ellery x m'o capsule </h3>
-                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym
-                                Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="card-list__price">$52.00</p>
-                        </div>
-                    </li>
-                </ul>
-                <button class="product__button" type="button">Browse All Product</button>
-            </section>
         </div>
-
-        <section class="advantage">
-            <h2 class="advantage__offer visually-hidden">Offer</h2>
-            <ul class="advantage__list container">
-                <li class="advantage__list-item">
-                    <img class="item-bus" src="img/bus.svg" alt="bus">
-                    <h2 class="item-heading">Free Delivery</h2>
-                    <p class="item-text">Worldwide delivery on all. Authorit tively morph next-generation
-                        innovation with extensive
-                        models.</p>
-                </li>
-                <li class="advantage__list-item">
-                    <img class="item-img" src="img/discount.svg" alt="discount">
-                    <h2 class="item-heading">Sales & discounts</h2>
-                    <p class="item-text">Worldwide delivery on all. Authorit tively morph next-generation
-                        innovation with extensive
-                        models.</p>
-                </li>
-                <li class="advantage__list-item advantage__list-itemtwo">
-                    <img class="item-corona" src="img/corona.svg" alt="corona">
-                    <h2 class="item-heading">Quality assurance</h2>
-                    <p class="item-text">Worldwide delivery on all. Authorit tively morph next-generation
-                        innovation with extensive
-                        models.</p>
-                </li>
-            </ul>
-        </section>
     </main>
 
     <footer class="footer">
@@ -299,7 +177,7 @@
                     <h2 class="promo-title">subscribe</h2>
                     <p class="promo-text">for our new letter promotion</p>
                     <div class="promo-send">
-                        <input class="send-email" type="email" placeholder="Enter Your Email">
+                        <input class="send-email" type="mail" placeholder="Enter Your Email">
                         <button class="send-button">Subscribe</button>
                     </div>
                 </section>
@@ -335,12 +213,12 @@
                     <a class="connection-network" href="#"><svg class="connection-network-link" width="32" height="32"
                             viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <path d="M31.9252 0H0.474609V32H31.9252V0Z" />
-                            <g clip-path="url(#clip1)">
+                            <g clip-path="url(#clip0)">
                                 <path fill="currentColor"
                                     d="M16.7403 8.20312C13.5556 8.20312 10.4082 10.3406 10.4082 13.8C10.4082 16 11.6374 17.25 12.3823 17.25C12.6896 17.25 12.8666 16.3875 12.8666 16.1438C12.8666 15.8531 12.1309 15.2344 12.1309 14.025C12.1309 11.5125 14.0305 9.73125 16.4889 9.73125C18.6027 9.73125 20.1671 10.9406 20.1671 13.1625C20.1671 14.8219 19.506 17.9344 17.3642 17.9344C16.5913 17.9344 15.9302 17.3719 15.9302 16.5656C15.9302 15.3844 16.7496 14.2406 16.7496 13.0219C16.7496 10.9531 13.835 11.3281 13.835 13.8281C13.835 14.3531 13.9002 14.9344 14.133 15.4125C13.7046 17.2688 12.8293 20.0344 12.8293 21.9469C12.8293 22.5375 12.9131 23.1188 12.969 23.7094C13.0745 23.8281 13.0218 23.8156 13.1832 23.7563C14.7476 21.6 14.6917 21.1781 15.3994 18.3562C15.7812 19.0875 16.7683 19.4812 17.5505 19.4812C20.8469 19.4812 22.3275 16.2469 22.3275 13.3313C22.3275 10.2281 19.6643 8.20312 16.7403 8.20312Z" />
                             </g>
                             <defs>
-                                <clipPath id="clip1">
+                                <clipPath id="clip0">
                                     <rect fill="currentColor" width="11.9193" height="16"
                                         transform="translate(10.4082 8)" />
                                 </clipPath>
@@ -349,12 +227,12 @@
                     <a class="connection-network" href="#"><svg class="connection-network-link" width="32" height="32"
                             viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M31.6635 0H0.212891V32H31.6635V0Z" />
-                            <g clip-path="url(#clip2)">
+                            <g clip-path="url(#clip0)">
                                 <path fill="currentColor"
                                     d="M22.417 12.7405C22.427 12.8826 22.427 13.0248 22.427 13.1669C22.427 17.5019 19.1498 22.4969 13.1599 22.4969C11.3145 22.4969 9.60022 21.9588 8.1582 21.0248C8.4204 21.0552 8.67247 21.0654 8.94475 21.0654C10.4674 21.0654 11.8691 20.5476 12.9884 19.6644C11.5565 19.6339 10.3565 18.6898 9.94305 17.3903C10.1447 17.4207 10.3464 17.441 10.5582 17.441C10.8506 17.441 11.1431 17.4004 11.4153 17.3294C9.92291 17.0248 8.80355 15.705 8.80355 14.1111V14.0705C9.23715 14.3141 9.74139 14.4664 10.2758 14.4867C9.39849 13.8979 8.82373 12.8928 8.82373 11.7557C8.82373 11.1466 8.98504 10.5882 9.26741 10.1009C10.8708 12.0908 13.2809 13.3902 15.9833 13.5324C15.9329 13.2887 15.9027 13.035 15.9027 12.7811C15.9027 10.974 17.3548 9.50195 19.1598 9.50195C20.0976 9.50195 20.9446 9.89789 21.5396 10.5375C22.2757 10.3954 22.9816 10.1212 23.6068 9.74561C23.3648 10.507 22.8505 11.1466 22.1749 11.5527C22.8304 11.4817 23.4657 11.2989 24.0505 11.0451C23.6069 11.6948 23.0522 12.2735 22.417 12.7405Z" />
                             </g>
                             <defs>
-                                <clipPath id="clip2">
+                                <clipPath id="clip0">
                                     <rect fill="currentColor" width="15.8924" height="16"
                                         transform="translate(8.1582 8)" />
                                 </clipPath>
@@ -365,6 +243,7 @@
         </div>
 
     </footer>
+    <script src="bootstrap js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

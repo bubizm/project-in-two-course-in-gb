@@ -1,0 +1,16 @@
+.forms {
+
+    &-data {
+        display: flex;
+        flex-direction: column;
+
+        &__text {
+            @include font(16px, 19px, 300);
+        }
+
+        &__gender {
+            display: flex;
+            margin-top: 31px;
+        }
+    }
+}

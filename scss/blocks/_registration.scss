@@ -1,49 +1,64 @@
-// .registration {
+.registration {
 
-// }
+    &-head {
+        background-color: $light;
+        padding: 60px 0 60px;
+        @include font(24px, 29px);
+        color: $red-pink;
+        text-transform: uppercase;
+    }
 
-.registration-head {
-    background-color: $light;
-    padding: 60px 0 60px;
-    @include font(24px, 29px);
-    color: $red-pink;
-    text-transform: uppercase;
-}
+    &__block {
+        margin-top: 64px;
+        margin-bottom: 96px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.registration__block {
-    margin-top: 64px;
-}
+    &__forms-login {
+        margin-top: 35px;
+    }
 
-.forms-data {
-    display: flex;
-    flex-direction: column
-}
+    &__forms-button {
+        margin-top: 39px;
+        background-color: $red-pink;
+        @include font (14px, 17px);
+        color: $white;
+        text-transform: uppercase;
+        padding: 16px 36px 17px 29px;
+        border: none;
 
-.forms-data__text {
-    @include font(16px, 19px, 300);
-}
+        &:hover {
+            background-color: white;
+            color: $red-pink;
+            border: 1px solid $red-pink;
+            padding: 15px 36px 16px 29px;
+        }
+    }
 
-.registration__forms-login {
-    margin-top: 35px;
-}
+    @media (max-width: 1199px) {
+        &-head__text {
+            margin-left: 16px;
+        }
 
-.text-input {
-    margin-top: 20px;
-    width: 365px;
-    height: 45px;
-}
+        &__block {
+            max-width: 736px;
 
-.forms-data__gender {
-    display: flex;
-    margin-top: 31px;
-}
+            &-text {
+                max-width: 354px;
+            }
+        }
+    }
 
-.gender-input {
-    margin-right: 10px;
-}
+    @media (max-width: 767px) {
+        &__block {
+            flex-direction: column;
+            align-items: center;
 
-.gender-label {
-    margin-right: 20px;
-    @include font(11px, 13px, 300);
-    padding-top: 3px;
+
+            &-text {
+                margin-top: 40px;
+            }
+        }
+    }
 }

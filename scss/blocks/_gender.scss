@@ -1,0 +1,11 @@
+.gender {
+    &-input {
+        margin-right: 10px;
+    }
+
+    &-label {
+        margin-right: 20px;
+        @include font(11px, 13px, 300);
+        padding-top: 3px;
+    }
+}

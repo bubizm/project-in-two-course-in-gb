@@ -1,0 +1,169 @@
+.chapter {
+    &-top {
+        display: flex;
+        text-transform: uppercase;
+        margin-top: 24px;
+    }
+
+    &-filter {
+        position: relative;
+        margin-left: 20px;
+        margin-right: 342px;
+        @include font (14px, 17px, 600);
+
+        &::after {
+            content: " ";
+            position: absolute;
+            background-image: url(../img/filter.svg);
+            width: 15px;
+            height: 10px;
+            bottom: 3px;
+            left: 60px;
+        }
+    }
+
+    &-trending {
+        position: relative;
+        display: flex;
+        @include font (14px, 17px);
+        color: $dark;
+
+        &__now {
+            margin-right: 48px;
+
+            &::after {
+                content: " ";
+                position: absolute;
+                background-image: url(../img/arrow-bottom.svg);
+                width: 10px;
+                height: 5px;
+                bottom: 6px;
+                left: 120px;
+            }
+        }
+
+        &__size {
+            margin-right: 48px;
+
+            &::after {
+                content: " ";
+                position: absolute;
+                background-image: url(../img/arrow-bottom.svg);
+                width: 10px;
+                height: 5px;
+                bottom: 6px;
+                left: 198px;
+            }
+        }
+
+        &__price {
+            &::after {
+                content: " ";
+                position: absolute;
+                background-image: url(../img/arrow-bottom.svg);
+                width: 10px;
+                height: 5px;
+                bottom: 6px;
+                left: 288px;
+            }
+        }
+    }
+
+    &-bottom {
+        text-align: center;
+        margin: 48px auto 96px;
+        letter-spacing: 5px;
+        border: 1px solid $grey;
+        padding: 12px 40px;
+        max-width: 284px;
+        position: relative;
+
+        &__pages {
+            @include font (16px, 19px, 300);
+            color: $grey-registration;
+
+            &::before {
+                content: " ";
+                position: absolute;
+                background-image: url(../img/arrow-left.svg);
+                width: 8px;
+                height: 14px;
+                left: 65px;
+                top: 15px;
+            }
+
+            &::after {
+                content: " ";
+                position: absolute;
+                background-image: url(../img/arrow-right.svg);
+                width: 8px;
+                height: 14px;
+                left: 285px;
+                top: 15px;
+            }
+        }
+
+        &__number {
+            color: $red-pink;
+        }
+
+        &__decimal {
+            letter-spacing: normal;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-filter {
+            margin-right: 382px;
+        }
+
+        &-bottom {
+            margin: 40px auto 63px;
+        }
+    }
+
+    @media (max-width: 426px) {
+        &-top {
+            justify-content: space-between;
+            padding-right: 35px;
+        }
+
+        &-filter {
+            margin-right: 20px;
+
+            &::after {
+                width: 35px;
+                height: 25px;
+                background-size: 35px 25px;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        &-head {
+            display: none;
+        }
+
+        &-trending {
+            @include font (12px, 14px);
+
+            &__now {
+                &::after {
+                    left: 105px;
+                }
+            }
+
+            &__size {
+                &::after {
+                    left: 180px;
+                }
+            }
+
+            &__price {
+                &::after {
+                    left: 264px;
+                }
+            }
+        }
+    }
+}

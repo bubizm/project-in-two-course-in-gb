@@ -4,14 +4,14 @@
         margin-top: 96px;
         text-align: center;
     }
-    
+
     &__text {
         @include font(14px, 17px);
         color: $grey;
         margin-top: 6px;
         text-align: center;
     }
-    
+
     &__card {
         display: flex;
         flex-wrap: wrap;
@@ -28,43 +28,50 @@
             }
         }
     }
+
     &__button {
         border: 1px solid $red;
         padding: 14px 38px;
         background-color: transparent;
-        @include font(16px,19px);
+        @include font(16px, 19px);
         color: $red;
         margin: 48px auto 95px;
-        display: block;
+        max-width: 134px;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
 
-            &:hover {
-                background-color: $red;
-                color: $white;
-            }
+        &:hover {
+            background-color: $red;
+            color: $white;
         }
-  
+    }
+
     // .product__card-list:hover .overlay-button, .product__card-list:hover .wrapper-overlay, .product__card-list:hover .list-wrapper, .product__card-list:hover .wrapper-overlay:before {
     //     display: flex;
     //     justify-content: space-around;
     //     align-items: center;
     // }
 
-    .product__card-list:hover .overlay-button, .product__card-list:hover .list-wrapper__overlay, .product__card-list:hover .list-wrapper, .product__card-list:hover .list-wrapper__overlay:before {
+    .product__card-list:hover .overlay-button,
+    .product__card-list:hover .list-wrapper__overlay,
+    .product__card-list:hover .list-wrapper,
+    .product__card-list:hover .list-wrapper__overlay:before {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .button-img {
         width: 26px;
         height: 24px;
     }
-    
+
     .card-list {
         padding: 0 28px 0 18px;
 
         &__title {
-            @include font(13px,16px);
+            @include font(13px, 16px);
             color: $black;
             padding-top: 25px;
             text-transform: uppercase;
@@ -122,4 +129,3 @@
         }
     }
 }
-

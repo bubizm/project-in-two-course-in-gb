@@ -1,0 +1,29 @@
+.caption {
+    &-text {
+        text-transform: uppercase;
+        @include font (24px, 29px);
+        color: $red-pink;
+        margin-left: 16px;
+    }
+
+    &-bread {
+        @include font (14px, 17px, 300);
+        color: $dark;
+        text-transform: uppercase;
+        margin-right: 16px;
+    }
+
+    &-arrivals {
+        color: $red-pink;
+    }
+
+    @media (max-width: 426px) {
+        &-text {
+            margin: 24px 0 0;
+        }
+
+        &-bread {
+            margin: 32px 0 46px;
+        }
+    }
+}

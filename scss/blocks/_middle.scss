@@ -1,0 +1,37 @@
+.middle {
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        justify-content: space-between;
+        margin-top: 48px;
+
+        &-list {
+            max-width: 360px;
+            background-color: $light-grey;
+            margin-bottom: 30px;
+
+            &:hover .list-wrapper__img {
+                filter: brightness(0.35);
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__card {
+            grid-template-columns: repeat(2, 50%);
+            justify-items: center;
+            justify-content: space-around;
+        }
+
+        &-last {
+            display: none;
+        }
+    }
+
+    @media (max-width: 426px) {
+        &__card {
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+
+}

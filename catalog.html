@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="apple-touch-icon" href="img/burger.svg"> -->
     <script src="js/menu.js"></script>
 </head>
 
@@ -21,14 +20,10 @@
                 </div>
                 <div class="header__wrp-links">
                     <div class="links-menu">
-                        <button id="burger" class="header__button" type="button">
-                            <svg class="header__button-img"
+                        <button id="burger" class="header__button" type="button"><svg class="header__button-img"
                                 width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
                             </svg>
-                            <!-- <svg class="header__button-img" width="32" height="23">
-                                <use xlink:href="img/sprite.svg#burger"></use>
-                              </svg> -->
                         </button>
                         <nav class="header__nav" id="menu">
                             <h2 class="header__nav-title">menu</h2>
@@ -81,70 +76,26 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="brand">
-            <div class="container">
-                <div class="brand__wrp">
-                    <img class="brand__wrp-img" src="img/man-in-top.png" alt="man">
-                    <div class="brand__wrp-block">
-                        <h1 class="block-title">the brand</h1>
-                        <p class="block-text">of luxerious <span class="block-text__fashion">fashion</span></p>
-                    </div>
-                </div>
+    <main class="catalog">
+        <section class="catalog-top">
+            <div class="catalog-caption container">
+                <h1 class="caption-text">new arrivals</h1>
+                <p class="caption-bread">home / men / <span class="caption-arrivals">new arrivals</span></p>
             </div>
         </section>
 
-        <div class="container">
-            <section class="categories">
-                <h2 class="categories__heading visually-hidden">Sales</h2>
-
-                <div class="categories__list">
-                    <ul class="categories__list-content">
-                    
-                        <li class="content-item">
-                            <div class="content-item__column">
-                                <p class="column-text">30% off</p>
-                                <h3 class="column-title">for women</h3>
-                            </div>
-                            <img class="content-item__img" src="img/girl-in-third-section.jpg" alt="girl">
-                        </li>
-                        <li class="content-item list-first">
-                            <div class="content-item__column">
-                                <p class="column-text">hot deal</p>
-                                <h3 class="column-title">for men</h3>
-                            </div>
-                            <img class="content-item__img" src="img/man-inthird-section.jpg" alt="man">
-                        </li>
-                        <li class="content-item">
-                            <div class="content-item__column">
-                                <p class="column-text">new arrivals</p>
-                                <h3 class="column-title">for kids</h3>
-                            </div>
-                            <img class="content-item__img" src="img/baby-inthird-section.jpg" alt="baby">
-                        </li>
-                    </ul>
+        <section class="catalog-chapter container">
+            <div class="chapter-top">
+                <h2 class="chapter-filter"><span class="chapter-head">filter</span></h2>
+                <div class="chapter-trending">
+                    <p class="chapter-trending__now">trending now</p>
+                    <p class="chapter-trending__size">size</p>
+                    <p class="chapter-trending__price">price</p>
                 </div>
-                <div class="categories__list">
-                    <ul class="categories__list-content">
-                    <li class="content-item content-long">
-                        <div class="content-item__column content-long__text">
-                            <p class="column-text">luxurious & trendy </p>
-                            <h3 class="column-title">accessories</h3>
-                        </div>
-                        <img class="content-item__img content-long__img" src="img/things-inthird-section.jpg"
-                            alt="things">
-                    </li>
-                   
-                </ul>
-                </div>
-            </section>
-
-            <section class="product">
-                <h2 class="product__header">Featured Items</h2>
-                <p class="product__text">Shop for items based on what we featured in this week</p>
-
-                <ul class="product__card">
-                    <li class="product__card-list">
+            </div>
+            <div class="chapter-middle">
+                <ul class="middle__card">
+                    <li class="middle__card-list">
                         <div class="list-wrapper">
                             <img class="list-wrapper__img" src="img/man1-in-fourth-section.jpg" alt="man">
                             <div class="list-wrapper__overlay">
@@ -163,9 +114,9 @@
                         </div>
                     </li>
 
-                    <li class="product__card-list">
+                    <li class="middle__card-list">
                         <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/girl1-in-fourth-section.jpg" alt="man">
+                            <img class="list-wrapper__img" src="img/man-in-catalog-1.jpg" alt="man">
                             <div class="list-wrapper__overlay">
                                 <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
                                     Add to Cart</button>
@@ -182,7 +133,7 @@
                         </div>
                     </li>
 
-                    <li class="product__card-list">
+                    <li class="middle__card-list">
                         <div class="list-wrapper">
                             <img class="list-wrapper__img" src="img/man2-in-fourth-section.jpg" alt="man">
                             <div class="list-wrapper__overlay">
@@ -201,7 +152,7 @@
                         </div>
                     </li>
 
-                    <li class="product__card-list product__card-last">
+                    <li class="middle__card-list">
                         <div class="list-wrapper">
                             <img class="list-wrapper__img" src="img/man3-in-fourth-section.jpg" alt="man">
                             <div class="list-wrapper__overlay">
@@ -220,9 +171,9 @@
                         </div>
                     </li>
 
-                    <li class="product__card-list product__card-last">
+                    <li class="middle__card-list">
                         <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/girl2-in-fourth-section.jpg" alt="man">
+                            <img class="list-wrapper__img" src="img/man-in-catalog-2.jpg" alt="man">
                             <div class="list-wrapper__overlay">
                                 <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
                                     Add to Cart</button>
@@ -239,9 +190,9 @@
                         </div>
                     </li>
 
-                    <li class="product__card-list product__card-last">
+                    <li class="middle__card-list">
                         <div class="list-wrapper">
-                            <img class="list-wrapper__img" src="img/girl3-in-fourth-section.jpg" alt="man">
+                            <img class="list-wrapper__img" src="img/man-in-catalog-3.jpg" alt="man">
                             <div class="list-wrapper__overlay">
                                 <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
                                     Add to Cart</button>
@@ -257,10 +208,70 @@
                             <p class="card-list__price">$52.00</p>
                         </div>
                     </li>
-                </ul>
-                <a class="product__button" href="catalog.html">Browse All Product</a>
-            </section>
-        </div>
+
+                    <li class="middle__card-list">
+                        <div class="list-wrapper">
+                            <img class="list-wrapper__img" src="img/man-in-catalog-4.jpg" alt="man">
+                            <div class="list-wrapper__overlay">
+                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
+                                    Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <h3 class="card-list__title">ellery x m'o capsule </h3>
+                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
+                                Australian
+                                arbiter of cool Kym
+                                Ellery
+                                teams up with Moda Operandi.</p>
+                            <p class="card-list__price">$52.00</p>
+                        </div>
+                    </li>
+
+                    <li class="middle__card-list">
+                        <div class="list-wrapper">
+                            <img class="list-wrapper__img" src="img/man-in-catalog-5.jpg" alt="man">
+                            <div class="list-wrapper__overlay">
+                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
+                                    Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <h3 class="card-list__title">ellery x m'o capsule </h3>
+                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
+                                Australian
+                                arbiter of cool Kym
+                                Ellery
+                                teams up with Moda Operandi.</p>
+                            <p class="card-list__price">$52.00</p>
+                        </div>
+                    </li>
+
+                    <li class="middle__card-list middle-last">
+                        <div class="list-wrapper">
+                            <img class="list-wrapper__img" src="img/man-in-catalog-6.jpg" alt="man">
+                            <div class="list-wrapper__overlay">
+                                <button class="overlay-button"><img class="button-img" src="img/cart.svg" alt="cart">
+                                    Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <h3 class="card-list__title">ellery x m'o capsule </h3>
+                            <p class="card-list__text">Known for her sculptural takes on traditional tailoring,
+                                Australian
+                                arbiter of cool Kym
+                                Ellery
+                                teams up with Moda Operandi.</p>
+                            <p class="card-list__price">$52.00</p>
+                        </div>
+                    </li>
+                    </ul>
+            </div>
+
+            <div class="chapter-bottom">
+                <p class="chapter-bottom__pages"><span class="chapter-bottom__number">1</span>  2  3  4  5  <span class="chapter-bottom__decimal">6.....20</span></p>
+            </div>
+        </section>
 
         <section class="advantage">
             <h2 class="advantage__offer visually-hidden">Offer</h2>
@@ -288,6 +299,7 @@
                 </li>
             </ul>
         </section>
+        
     </main>
 
     <footer class="footer">
